@@ -48,7 +48,7 @@ T.post('statuses/update', {
 tweet()
 
 //12 hours: 4.32e+7
-setInterval(tweet,4.32e+7)
+setInterval(tweet,4000)
 
 
    function onTweeted(err, reply) {
