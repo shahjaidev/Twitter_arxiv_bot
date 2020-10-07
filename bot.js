@@ -23,7 +23,7 @@ function tweet (){
 
     if (tweeted_set.has(tweet)==true )
     {
-                    const pyProg = spawn('python', ['./js_scrape.py']);
+                  const pyProg = spawn('python', ['./js_scrape.py']);
 
                   pyProg.stdout.on('data', (data) => 
                   {
@@ -58,3 +58,6 @@ setInterval(tweet,4000)
             console.log('Tweeted: ' + reply.text)
         }
     }
+
+
+    
